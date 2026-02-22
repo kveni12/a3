@@ -64,9 +64,9 @@
 			</p>
 
 			<ul>
-				<li>This sketch allows for easier comparison of COVID-19 case levels over time, because it is easier to compare peaks, troughs, and rates of change in a time series graph than the spiral graph given.</li>
-				<li>The 7-day average allows for a smoothed line that reduces noise and emphasizes overall trends (i.e. if people were more busy monday and tuesday than saturday and sunday, maybe more covid cases were confirmed over the weekend. This could create smaller peaks and troughs that take away from the overall trend).</li>
-				<li>Variant labels are placed in a separate band rather than directly on the line to avoid clutter but also correlate peaks with the variants they are likely associated with.</li>
+				<li>This sketch facilitates clearer comparison of COVID-19 case levels over time by using a standard time series format, which makes peaks, troughs, and rates of change easier to interpret than in the original spiral visualization.</li>
+				<li>A 7-day rolling average is used to smooth short-term reporting noise and weekly cycles, allowing viewers to focus on broader trends rather than day-to-day fluctuations that could obscure the overall trajectory of the pandemic.</li>
+				<li>Variant information is displayed in a separate annotation band rather than directly on the line, reducing visual clutter while still providing contextual information that helps associate major surges with predominant variants.</li>
 			</ul>
 
 			<figure>
@@ -81,26 +81,25 @@
 			</p>
 
 			<ul>
-				<li>Organizing the data by week number (1-52) for each year allows for seasonal patterns to be more immediate. Winter weeks align vertically across the years, so viewers can recognize recurring surges and their magnitudes.</li>
-				<li>Color intensity represents the number of average new cases per week, allowing larger surges to be more visibly striking without needing precise numeric reading.</li>
-				<li>This layout makes it easier to spot trends and anomalies over multiple years, providing a clear visual summary of the data. On top of this, the heatmap format reduces visual clutter, and aggregating the data by week removes short-term noise. Missing data is explicitly marked, as the squares are crossed out, and the consistent layout across years helps viewers focus on broad trends rather than track a continuous timeline.</li>
+				<li>Organizing the data by week number (1-52) for each year allows for seasonal patterns to be more immediate. Winter weeks align vertically across the years, so viewers can see the recurring surges and their magnitudes.</li>
+				<li>Color intensity represents the number of average new cases per week, allowing larger surges to be more visibly striking without needing precise numeric reading. This allows for rapid pattern recognition at a glance.</li>
+				<li>This layout makes it easier to spot trends and anomalies over multiple years, providing a clear, compact visual summary of the data. On top of this, the heatmap format reduces visual clutter, and aggregating the data by week removes short-term noise. Missing data is explicitly marked, as the squares are crossed out, and the consistent layout across years helps viewers focus on broad trends rather than track a continuous timeline.</li>
 			</ul>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="images/image3.png" alt="Month-by-month comparison of average daily COVID-19 cases" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					Month-by-month comparison of average daily (over the month) COVID-19 cases, showing how seasonal patterns and monthly severity differ across years.
 				</figcaption>
 			</figure>
-
 			<p>
 				Design Rationale for Sketch 3:
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>This design is inspired by the structure of a population pyramid. Placing months on the y-axis treats time as a categorical variable rather than a continuous timeline, which emphasizes seasonal structure and makes it easy to compare the same month across different years. To show the categorical nature of this, the dots are disconnected to enable comparison between different years in the same month/seasons, rather than viewing this as a trend over continuous time. This orientation encourages viewers to read horizontally and directly assess how COVID-19 severity varies by month.</li>
+				<li>Average daily case counts are encoded using horizontal position on a shared x-axis, which supports accurate comparison of magnitude both within a single year and across years. Aggregating data at the monthly level smooths short-term fluctuations and reporting noise, allowing the viewer to focus on broad seasonal trends. However, this aggregation also obscures finer-grained week-to-week variation and rapid changes that may occur within a month.</li>
+				<li>Color is used to differentiate between years, allowing for clear comparison of seasonal patterns while keeping the visual focus on month-to-month differences. By keeping the mark shape and size relatively constant across years, the design ensures that color encodes only categorical information and does not compete with position as an indicator of magnitude.</li>
 			</ul>
 		</section>
 
